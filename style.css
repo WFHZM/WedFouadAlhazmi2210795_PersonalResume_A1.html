@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Garamond', 'Times New Roman', serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.profile-section {
+    padding: 15px;
+    background-color: #e0f7e8;
+    border-radius: 10px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fe7f9c;
+}
+
+h2.section-title {
+    color: #fe7f9c;
+    margin-bottom: 20px;
+}
+
+.profile-title {
+    color: #fe7f9c;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-section p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.profile-item {
+    margin-bottom: 15px;
+}
+
+.content-section {
+    padding: 15px;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.info-section h2 {
+    color: #fe7f9c;
+    margin-bottom: 15px;
+}
+
+.contact-title {
+    color: #fe7f9c;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    color: #fe7f9c;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #e35576;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #fe7f9c;
+}
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .cv-container {
+        padding: 10px;
+    }
+
+    h2.section-title, .info-section h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .profile-pic img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-section, .content-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .cv-container {
+        padding: 20px;
+    }
+
+    h2.section-title, .info-section h2 {
+        font-size: 24px;
+    }
+}
